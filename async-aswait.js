@@ -1,8 +1,5 @@
-
-import fs from 'fs';
-import fetch from 'node-fetch';
-
-
+import fs from "fs"
+import fetch from "node-fetch"
 
 // Load Data
 /* async function loadFile() {
@@ -18,19 +15,16 @@ import fetch from 'node-fetch';
 loadFile()
 */
 
-
-
 // Fetch
 
 async function fetchPokemon() {
-    try {
-        const response = await fetch('https://pokeapi.co/api/v2/pokemon/ditto');
-        const data = await response.json();
-        console.log(data);
-    }
-    catch (error) {
-        console.error(error)
-    }
+	try {
+		const response = await fetch("https://pokeapi.co/api/v2/pokemon/ditto")
+		const data = await response.json()
+		console.log(data)
+	} catch (error) {
+		console.error(error)
+	}
 }
 
-fetchPokemon();
+fetchPokemon()

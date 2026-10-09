@@ -1,15 +1,10 @@
-
-const fs = require('fs');
-
-
+const fs = require("fs")
 
 // setTimeout
 
 /* setTimeout(() => {
     console.log('Waited 1 second');
 }, 1000); */
-
-
 
 // Nested setTimeout
 
@@ -23,14 +18,11 @@ const fs = require('fs');
     }, 1000);
 }, 1000); */
 
-
-
 // Errors callback
-fs.readFile('text.txt', {endcoding: 'utf-8'}, (err, data) => {
-    if (err) {
-        console.error(err)
-    }
-    else {
-        console.log(data);
-    }
-});
+fs.readFile("text.txt", { endcoding: "utf-8" }, (err, data) => {
+	if (err) {
+		console.error(err)
+	} else {
+		console.log(data)
+	}
+})

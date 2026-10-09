@@ -1,8 +1,5 @@
-
-import fs from 'fs';
-import fetch from 'node-fetch';
-
-
+import fs from "fs"
+import fetch from "node-fetch"
 
 // Promise
 
@@ -18,8 +15,6 @@ import fetch from 'node-fetch';
 
 myPromise.then(() => { console.log('Success!') }).catch(() => { console.log('Error!') }); */
 
-
-
 // FS Promises
 
 /* fs.promises
@@ -27,11 +22,13 @@ myPromise.then(() => { console.log('Success!') }).catch(() => { console.log('Err
     .then( (data) => {console.log(data)})
     .catch( (err) => {console.error(err)}) */
 
-
-
 // Fetch Promises
 
-fetch('https://pokeapi.co/api/v2/pokemon/ditto')
-    .then((response) => response.json())
-    .then((data) => { console.log(data) })
-    .catch((err) => { console.error(err) })
+fetch("https://pokeapi.co/api/v2/pokemon/ditto")
+	.then((response) => response.json())
+	.then((data) => {
+		console.log(data)
+	})
+	.catch((err) => {
+		console.error(err)
+	})
